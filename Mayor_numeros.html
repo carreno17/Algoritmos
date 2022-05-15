@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function mayor() {
+        var  num1 = document.getElementById('a').value;
+        var num2 = document.getElementById('b').value;
+        var num3 = document.getElementById('c').value;
+        var num4 = document.getElementById('d').value;
+        var m =0 ;
+
+        if( num1>num2){
+            m=num1;    
+        }else {
+            m=num2;
+        }
+        if( m>num3){
+            m=m;    
+        }else {
+            m=num3;
+        }
+        if( m>num4){
+            m=m;    
+        }else {
+            m=num4;
+        }
+        alert('El numero mayor es: ' + m)
+    };
+    function menor() {
+        var  num1 = document.getElementById('a').value;
+        var num2 = document.getElementById('b').value;
+        var num3 = document.getElementById('c').value;
+        var num4 = document.getElementById('d').value;
+        var m = 0 ;
+
+        if( num1<num2){
+            m=num1;    
+        }else {
+            m=num2;
+        }
+        if( m<num3){
+            m=m;    
+        }else {
+            m=num3;
+        }
+        if( m<num4){
+            m=m;    
+        }else {
+            m=num4;
+        }
+        alert('El numero menor es: ' + m)
+    };
+
+    function promedio(){
+        var  num1 = document.getElementById('a').value;
+        var num2 = document.getElementById('b').value;
+        var num3 = document.getElementById('c').value;
+        var num4 = document.getElementById('d').value;
+        var resultado =  (parseInt(num1) + parseInt(num2) + parseInt(num3) + parseInt(num4)) / 4 ;
+        alert('El promedio de los 4 numeros es: ' + resultado);
+    }
+
+    </script>
+    <style>
+        .dos{
+            margin-bottom: 10px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+         <header>
+        <h3>CALCULAR EL PROMEDIO DE TEMPERATURA DE UNA CALDERA<h3>
+        </header>
+        
+                
+                    <label for="lectura">Primer numero</label>
+                    <input class="dos"type="text" id="a" placeholder="primero" required>
+                    <label for="circuito">Segundo numero</label>
+                    <input class="dos" type="text" id="b" placeholder="segundo" required><br>
+                    <label for="circuito">Tercer numero</label>
+                    <input class="dos" type="text" id="c" placeholder="tercer" required>
+                    <label for="circuito">Cuarto numero</label>
+                    <input class="dos" type="text" id="d" placeholder="cuarto" required><br>
+                    <button onclick="mayor();">MAYOR</button>
+                    <button onclick="menor();">MENOR</button>
+                    <button onclick="promedio();">PROMEDIO</button>
+
+            
+
+</body>
+</html>

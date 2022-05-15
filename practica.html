@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function prueba () {
+        var numeros = document.getElementById('numero').value;
+        // i=0;
+        // while(numeros <100){
+        //     numeros= parseInt(numeros)+2
+        //     console.log(numeros)
+        // }
+        for(numeros; numeros<=100; numeros=parseInt(numeros)+2){
+            console.log(numeros)
+        }
+       }
+    </script>
+
+    <input type="text" id="numero">
+    <button onclick="prueba();">CLICK</button>
+
+</body>
+</html>

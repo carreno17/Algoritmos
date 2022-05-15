@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload();
+
+        function conversion(){
+           var notas = document.getElementById("david").value;
+           if(notas > 20 ){
+               alert('El valor entero no está dentro de los parametros permitodos')
+           }
+
+            if (notas >=18 && notas <=20){
+                alert('El equivalente en letra es :A');
+            };
+        
+            if (notas >=14 && notas <=17){
+                alert('El equivalente en letra es: B');
+            }
+
+            if (notas >=10 && notas <=13){
+                alert('El equivalente en letra es: C');
+            }
+            
+            if (notas >=1 && notas <=9){
+                alert('El equivalente en letra es: D');
+            }
+        }
+    </script>
+</head>
+<body>
+     <h1>CONVERTIR UNA NOTA DEL 1 AL 20 A UNA LETRA</h1>
+     <label for="circulo">Ingrese el valor entero de la nota del 1 al 20</label>
+     <input type="text" id="david" placeholder="Nota" required>
+     <button onclick="conversion();">CONVERSIÓN</button>
+
+</body>
+</html>

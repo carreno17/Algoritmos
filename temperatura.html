@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function promedio() {
+        var  lect1 = document.getElementById('lect1').value;
+        var lect2 = document.getElementById('lect2').value;
+        var lectura1 = 9/5 * ( parseInt (lect1) + 32) ;
+        var lectura2 = 9/5 * ( parseInt (lect2) + 32) ;
+        var promedio = lectura1 + lectura2
+        if(promedio < 250 ){
+            alert("Caldera en situación Normal")
+        }else {
+            alert("Caldera en situación de Riesgo")
+        };
+        alert(promedio);
+    } 
+    </script>
+</head>
+<body>
+     <h1>CALCULAR EL PROMEDIO DE TEMPERATURA DE UNA CALDERA<h1>
+     <label for="lectura">Primera lectura</label>
+     <input type="text" id="lect1" placeholder="primera" required>
+     <label for="circuito">Segunda lectura</label>
+     <input type="text" id="lect2" placeholder="segunda" required>
+     <button onclick="promedio();">PROMEDIO</button>
+     
+
+</body>
+</html>
